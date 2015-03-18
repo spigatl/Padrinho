@@ -1,0 +1,102 @@
+/* INICIO -> Link */
+a {
+	color:#be696e;
+	text-decoration: none;
+}
+a:hover {
+	color: #be696e;
+	text-decoration: underline;
+}
+
+/* FIM -> Link */
+#boxes {
+font: 12px "verdana", "New York", serif;
+position: relative;
+color:#333;
+background:#fff;
+border: 1px;
+margin-top: 10px;
+border-style:solid;
+border-color:#efbab7 #efbab7;
+border-radius:15px;
+/*implentação no firefox */
+-moz-border-radius: 15px;
+/* implementação para safari */
+-webkit-border-radius: 15px;
+box-shadow: 3px 3px 7px #fae7e8;
+/*implentação no firefox */
+-moz-box-shadow: 3px 3px 7px #fae7e8;
+/* implementação para safari */
+-webkit-box-shadow: 3px 3px 7px #fae7e8;
+}
+
+
+div.boxform {
+	text-align:left;
+	width:758px;
+	height: 400px;
+	background:#e8dfda;
+	margin-left:5px;
+	margin-top:-30px;
+	margin-bottom:5px;
+	border-radius:15px;
+/*implentação no firefox */
+-moz-border-radius: 15px;
+/* implementação para safari */
+-webkit-border-radius: 15px;
+}
+
+/* CORPO -> INICIO */
+
+h6#txt1 {
+	font: 30px "verdana", "New York", serif;
+	font-weight: bold;
+	margin-left:0%;
+	margin-top: 0%;
+	color:#be696e;
+	width:250px;
+}
+
+h7#txt2 {
+	font: 20px "verdana", "New York", serif;
+	float:left;
+	margin-left:35px;
+	margin-top:-9%;
+	color:#be696e;
+}
+
+h8#um {
+	font: 6em "Georgia", "Times New Roman", "Times", serif;
+	margin-left: 30px;
+	color:#786456;
+}
+h9#msg {
+	font: 20px "verdana", "New York", serif;
+	color:#786456;
+	font-weight: bold;
+}
+.estilotextarea {
+	margin-left: 10px;
+	width: 730px;
+	height: 250px;
+}
+
+#checkbox {
+	margin-left:35%;
+}
+#continuar {
+	margin-left:85%;
+}
+/* CORPO -> FIM */
+/* RODAPE -> INICIO */
+h10#final {
+	position: absolute;
+	left:-1px;
+	margin-top:auto;
+	padding: 100px 800px 0px 10px; /* padding-top=altura imagem */
+	background:url(../imagens/pagina-inicial_12.png) no-repeat;
+	height: 0 !important;
+	height /**/:20px; /* height=altura imagem - hack IE5's */
+	z-index:99;
+	}
+/* RODAPE -> FINAL */

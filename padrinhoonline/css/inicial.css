@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+body, ul, ol, h1, h2, h3, h4, img, p, hr, ul#nav, form, select, map {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+/* INICIO  Formulario */
+form {
+	position: absolute;
+width: 250px;
+height: 150px;
+}
+
+form legend {
+	color:#786456;
+	font-family: "Verdana", "Geneva", sans-serif;
+	font-size: 20px;
+	left: 60px;
+	width: 250px;
+	font-weight: bold;
+	text-align: center;
+	padding: 3px 0px 11px 0px;
+}
+
+form p {
+
+	text-align: center;
+	padding: 15px 0px;
+}
+
+input, textarea {
+	text-align: center;
+	background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 180px;
+
+}
+form input:focus{
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background-color:#FFFEEF;
+}
+form button {
+    border:none;
+    outline:none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor:pointer;
+    padding: 7px 15px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:15px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+form button:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#local {
+	text-align: center;
+	width: 100px;
+}
+/* FIM ->  Formulario */
+
+.meio3 {
+	padding: 200px 770px 0px 10px; /* padding-top=altura imagem */
+	background:url(../imagens/pagina-inicial_06.png) no-repeat;
+	height: 0 !important;
+	height /**/:20px; /* height=altura imagem - hack IE5's */
+}
+.meio4 {
+	padding: 40px 770px 0px 0px; /* padding-top=altura imagem */
+	background:url(../imagens/pagina-inicial_08.png) no-repeat;
+	height: 0 !important;
+}
+.dica {
+	float: left;
+	width: 258px;
+	height: 180px;
+	background:url(../imagens/pagina-inicial_092.png) no-repeat;
+}
+h9#idlista {
+	left:69%;
+	top:380px;
+	padding: 200px 250px 0px 10px; /* padding-top=altura imagem */
+	background:url(../imagens/pagina-inicial_09.png) no-repeat;
+	height: 0 !important;
+	height /**/:20px; /* height=altura imagem - hack IE5's */
+}
+.dicamsg1 {
+	color:#786456;
+	height: 20px;
+	padding-right: 60px;
+	font-family: "Verdana", "Geneva", sans-serif;
+	font-size: 12px;
+	font-style: oblique;
+	font-weight: bold;
+	text-align: right;
+}
+.dicamsg {
+	color:#786456;
+	height: 130px;
+	padding: 30px 10px 0px 34px;
+	font-family: "Verdana", "Geneva", sans-serif;
+	font-size: 12px;
+	font-style: oblique;
+}
+.bottom {
+	margin-top: 180px;
+	padding: 100px 770px 0px 0px; /* padding-top=altura imagem */
+	background:url(../imagens/pagina-inicial_12.png) no-repeat;
+}

@@ -1,0 +1,473 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    color:#444444;
+    font-size:13px;
+    background: #f2f2f2;
+    font-family:"verdana", "New York", serif;
+}
+#boxes {
+font: 12px "verdana", "New York", serif;
+position: relative;
+color:#333;
+background:#fff;
+border: 1px;
+margin-top: 10px;
+border-style:solid;
+border-color:#efbab7 #efbab7;
+border-radius:15px;
+/*implentação no firefox */
+-moz-border-radius: 15px;
+/* implementação para safari */
+-webkit-border-radius: 15px;
+box-shadow: 3px 3px 7px #fae7e8;
+/*implentação no firefox */
+-moz-box-shadow: 3px 3px 7px #fae7e8;
+/* implementação para safari */
+-webkit-box-shadow: 3px 3px 7px #fae7e8;
+}
+#content{
+    margin:15px auto;
+    text-align:center;
+    width:733px;
+}
+#wrapper{
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:2px solid #fff;
+    background-color:#f9f9f9;
+    width:730px;
+    overflow:hidden;
+}
+#contform {
+    clear:both;
+    margin:5px 0px;
+    background-color:#f4f4f4;
+    border:1px solid #fff;
+    width:690px;
+    height:400px;
+    padding:10px;
+    margin-left:10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    overflow:auto;  
+}
+#fr_erro2 {
+    clear:both;
+    margin:5px 0px;
+    background-color:#FFEDEF;
+    border:1px solid #fff;
+    width:680px;
+    padding:10px;
+    margin-left:10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    overflow:auto;  
+}
+#steps{
+    width:730px;
+    overflow:hidden;
+}
+.step{
+    width:721px;
+}
+#steps form fieldset{
+    border:none;
+    padding-bottom:20px;
+}
+#steps form legend{
+    text-align:left;
+    background-color:#f0f0f0;
+    color:#666;
+    font-size:24px;
+    font-weight:bold;
+    float:left;
+    width:720px;
+    padding:5px 0px 5px 10px;
+    margin:10px 0px;
+}
+#steps form p.p_erro{
+    clear:both;
+    float: right;
+    text-align:left;
+    margin:1px 0px;
+    padding:2px;
+    width:100%;
+    margin-left:0px;
+    color: #be696e;
+}
+#steps form p.perfildireita{
+    clear:both;
+    text-align:right;
+    margin:5px 0px;
+    width:400px;
+}
+#steps form p.perfilesquerda{
+     clear:both;
+    text-align:right;
+    padding: 10px 0px;
+    margin:5px 0px;
+    width:400px;
+}
+#steps form p label{
+    width:200px;
+    text-align:right;
+    margin-right:15px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+#steps form input,
+#steps form textarea,
+#steps form select{
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+}
+#steps form input[type=checkbox] {
+    display: table-cell;
+    width:20px;
+    padding-right: 200px;
+}
+#steps form input[type=file] {
+    display: table-cell;
+    cursor: default;
+    white-space: nowrap;
+    top: initial!important;
+    right: initial!important;
+}
+#checktxt {
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+#steps form input:focus{
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background-color:#FFFEEF;
+}
+#steps form button#registerButton {
+    border:none;
+    outline:none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor:pointer;
+    padding: 7px 25px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:22px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#steps form button#registerButton:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#photo {
+    margin: 5px 10px;
+    border: 1px solid #ddd;
+}
+
+#phototxt {
+    width:200px;
+    float:center;
+    margin-right:15px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+#steps form button:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#file1c {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}​
+#checkctg {
+display: block;
+}
+#steps li {
+    text-align: justify;
+    width: 200px;
+    padding: 5px;
+}
+#user {
+    width: 500px;
+    margin: 0px auto;
+}
+#steps form p.bot {
+    width: 100%;
+    text-align: center;
+}
+
+.ibutton-container {
+  position: relative;
+  height: 27px;
+  cursor: pointer;
+  overflow: hidden;
+    /* set max width to that of sprite */
+    max-width: 400px;
+    /* prevent text selection */
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -moz-user-focus: ignore; 
+    -moz-user-input: disabled;
+    /* set default width based on ON/OFF labels */
+    width: 89px;
+}
+
+.ibutton-container input {
+  position: absolute;
+    top: 0;
+    left: 0;
+
+    /* hide the element */
+    filter:alpha(opacity=0);
+    -moz-opacity: 0.0; 
+    opacity: 0.0;
+
+    /* allow checking of input if visible */
+    -moz-user-input: enabled  !important;
+}
+
+.ibutton-handle {
+  display: block;
+  height: 27px;
+  cursor: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 0 -54px;
+  z-index: 3;
+  padding-left: 3px;
+    /* set default width based on ON/OFF labels */
+    width: 33px;
+}
+
+.ibutton-handle-right {
+  height: 100%;
+  width: 100%;
+  padding-right: 3px;
+  background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 100% -54px;
+  z-index: 3; 
+}
+
+.ibutton-handle-middle {
+  height: 100%;
+  width: 100%;
+  background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 50% -54px;
+  z-index: 3; 
+}
+
+div.ibutton-label-on, div.ibutton-label-off {
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  cursor: inherit;
+  display: block;
+  height: 22px;
+  position: absolute;
+  width: auto;
+  top: 0;
+  padding-top: 5px;
+  overflow: hidden; 
+  background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 0 0;
+}
+
+div.ibutton-label-on {
+  color: #fff;
+  text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.4);
+  left: 0;
+  padding-top: 5px;
+  z-index: 1; 
+}
+
+div.ibutton-label-on span {
+  padding-left: 5px;
+}
+
+div.ibutton-label-off {
+  color: #7c7c7c;
+  background-position: 100% 0;
+  text-shadow: 0 -1px 2px rgba(153, 153, 153, 0.4);
+  text-align: right;
+  right: 0;
+    /* the off label needs to near the left edge (ideally just 5px away) 
+     * it just needs to be close enough that it won't show under the handle if dragged to the left  
+     */
+    width: 95%;
+}
+
+div.ibutton-label-off span {
+  padding-right: 5px; 
+}
+
+/* create an outline when button gets focus via keyboard */
+.ibutton-container label {
+    cursor: inherit;
+    padding: 1px 5px;
+    font-size: 1em !important;
+}
+
+.ibutton-focus label {
+    /* we must use border, since outline doesn't work in IE */
+    border: 1px dotted #666 !important;
+    padding: 0 2px;
+}
+
+.ibutton-focus div.ibutton-label-on span label {
+    /* use white for more contrast */
+    border-color: #fff !important;
+}
+
+/* add padding to right/left so that text gets clipped before absolute edge */
+.ibutton-padding-left, .ibutton-padding-right {
+    position: absolute; 
+    top: 4px;
+    z-index: 2; 
+    background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 0 -4px; 
+    width: 3px;
+    height: 20px;
+}
+    
+.ibutton-padding-left {
+    left: 0; 
+}
+
+.ibutton-padding-right {
+    right: 0; 
+    background-position: 100% -4px;
+}
+
+/* change the styles of the handle when being dragged */
+.ibutton-active-handle .ibutton-handle {
+    background-position: 0 -108px;
+}
+
+.ibutton-active-handle .ibutton-handle-right {
+    background-position: 100% -108px;
+}
+
+.ibutton-active-handle .ibutton-handle-middle {
+    background-position: 50% -108px;
+}
+
+/* styles to use when the button is disabled */
+.ibutton-disabled {
+    cursor: not-allowed !important; /* cursor options: default or not-allowed */
+}
+
+.ibutton-disabled .ibutton-handle {
+    background-position: 0 -81px;
+}
+
+.ibutton-disabled .ibutton-handle-right {
+    background-position: 100% -81px;
+}
+
+.ibutton-disabled .ibutton-handle-middle {
+    background-position: 50% -81px;
+}
+
+.ibutton-disabled div.ibutton-label-on {
+    background-position: 0 -27px;
+}
+
+.ibutton-disabled div.ibutton-label-off {
+    background-position: 100% -27px;
+}
+
+.ibutton-disabled .ibutton-padding-left {
+    background-position: 0 -27px;
+}
+
+.ibutton-disabled .ibutton-padding-right {
+    background-position: 100% -27px;
+}
+
+.ibutton-disabled div.ibutton-label-on {
+    color: #fff;
+}
+
+.ibutton-disabled div.ibutton-label-off {
+    color: #cbcbcb;
+}
+
+        h4, h5 {
+            margin-bottom: 0;
+        }
+        
+        .examples pre {
+            margin-top: 0;
+        }
+        
+        label.label {
+            display: block;
+            width: 140px;
+            float: left;
+            padding-top: 5px;
+            height: 30px;
+        }
+        
+        div.row {
+            margin-top: 10px;
+        }
+
+        div.row p {
+            clear: both;
+            font-size:11px;
+            font-style: italic;
+            margin-left: 20px;
+            font-weight: none;
+            text-align: left;
+          
+        }
+        
+        input.button {
+            margin-top: 5px;
+        }
+        
+        /* shows overwriting styles via CSS */
+        #css .ibutton-container {
+            width: 175px;
+        }
+
+        #css .ibutton-container .ibutton-handle {
+            width: 5px;
+        }

@@ -1,0 +1,54 @@
+body, ul, ol, h1, h2, h3, h4, img, p, hr, ul#nav, form, select, map {
+text-decoration: none;
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+/* INICIO -> Link */
+a {
+	color:#be696e;
+	text-decoration: none;
+}
+a:hover {
+	color: #be696e;
+	text-decoration: underline;
+}
+/* INICIO -> Plano de Fundo */
+.extradiv {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../imagens/radial.png", sizingMethod="scale");
+	height:110%;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:-1px;
+	opacity:0.3;
+	}
+* html .extradiv {
+	position:absolute;
+	top: expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+0+"px" : body.scrollTop+0+"px");
+}
+.extradiv img {
+	 /* display:none\9; */
+	height:100%;
+	width:100%;
+	opacity:0.1;
+	padding: 0px;
+}
+/* FIM -> plano de fundo*/
+/* INICIO -> CORPO DO SITE */
+#corpo {
+	position: relative;
+	width: auto;
+	margin-top: 10%; 
+	background-attachment:absolute;	
+}
+#logo1 {
+	float: left;
+	margin-left: 25%;
+}
+#msg2 {
+    color:#666;
+    font-size:24px;
+    font-weight:bold;
+}

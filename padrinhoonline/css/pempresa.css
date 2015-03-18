@@ -1,0 +1,832 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    color:#444444;
+    font-size:13px;
+    background: #f2f2f2;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+}
+a {
+    color:#444444;
+    text-decoration: none;
+}
+a:hover {
+    color: #444444;
+    text-decoration: underline;
+}
+#boxes {
+    font: 12px "verdana", "New York", serif;
+position: relative;
+color:#333;
+background:#fff;
+border: 1px;
+margin-top: 10px;
+border-style:solid;
+border-color:#efbab7 #efbab7;
+border-radius:15px;
+/*implentação no firefox */
+-moz-border-radius: 15px;
+/* implementação para safari */
+-webkit-border-radius: 15px;
+box-shadow: 3px 3px 7px #fae7e8;
+/*implentação no firefox */
+-moz-box-shadow: 3px 3px 7px #fae7e8;
+/* implementação para safari */
+-webkit-box-shadow: 3px 3px 7px #fae7e8;
+}
+#content{
+    margin:15px auto;
+    text-align:center;
+    width:733px;
+    position:relative;
+    height:100%;
+}
+#wrapper{
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:2px solid #fff;
+    background-color:#f9f9f9;
+    width:730px;
+    overflow:hidden;
+}
+#steps{
+    width:730px;
+    /*height:320px;*/
+    overflow:hidden;
+}
+.step{
+    width:721px;
+    /*height:320px;*/
+}
+#steps fieldset{
+    border:none;
+    padding-bottom:20px;
+}
+#steps legend{
+    text-align:left;
+    background-color:#f0f0f0;
+    color:#666;
+    font-size:24px;
+    font-weight:bold;
+    float:left;
+    width:720px;
+    padding:5px 0px 5px 10px;
+    margin:10px 0px;
+}
+.legform{
+    text-align:left;
+    color:#666;
+    font-size:24px;
+    font-weight:bold;
+    float:left;
+    padding:5px 0px 5px 10px;
+    margin:10px 0px;
+}
+#steps form p.perfildireita{
+    clear:both;
+    text-align:right;
+    margin:5px 0px;
+    width:400px;
+    margin-left:0px;
+}
+#steps p label {
+    display: inline;
+    width:200px;
+    margin-right:15px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+#steps form input,
+#steps form textarea,
+#steps form select{
+    display: inline;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+}
+#steps form li {
+    text-align: left;
+    margin-left: 50px;
+    padding: 2px;
+}
+#steps form input[type=checkbox] {
+    display: table-cell;
+    width:20px;
+    padding-right: 200px;
+}
+#steps form input:focus{
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background-color:#FFFEEF;
+}
+#estado {
+    width:170px;
+    padding: 10px 8px;
+    border: 1px solid;
+    border-radius:8px;
+    border-color:rgb(230,230,230);
+    background-image: linear-gradient(bottom, rgb(230,230,230) 100%, rgb(232,232,232) 100%, rgb(255,255,255) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(230,230,230) 100%, rgb(232,232,232) 100%, rgb(255,255,255) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(230,230,230) 100%, rgb(232,232,232) 100%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(230,230,230) 100%, rgb(232,232,232) 100%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(230,230,230) 100%, rgb(232,232,232) 100%, rgb(255,255,255) 100%);
+}
+
+#steps ul {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#steps ul label {
+ display: block;
+ width:200px;
+ margin-right:15px;
+ line-height:26px;
+ color:#666;
+ text-shadow:1px 1px 1px #fff;
+ font-weight:bold;
+ font-size:14px;
+}
+#estado ul li {
+    line-height:20px;
+    list-style-type:disc;
+    list-style-position:inside;
+    font-weight:normal;
+    color:#666;
+}
+.img {
+    display: block;
+    width:200px;
+    border: 1px solid #999;
+}
+#steps form button#registerButton {
+    border:none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor:pointer;
+    padding: 7px 25px; 
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    margin-top: 20px;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:22px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#steps form button#registerButton:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#pertuto {
+    text-align:justify; 
+}
+#pertuto label {
+    display: block;
+    font-size: 14px;
+
+}
+#pertuto label.titulo {
+    display: block;
+    width:200px;
+    margin-right:15px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+    font-size:16px;
+}
+#pertuto label.titulo2 {
+    display: inline;
+    width:200px;
+    margin-right:15px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+    font-size:12px;
+}
+#pertuto label.obs {
+    font-size:12px;
+    font-style: italic;
+}
+#pertuto label.texto {
+    display: inline;
+    font-size:12px;
+}
+#perform {
+    text-align: center;
+}
+#perform form button:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#perform form button {    
+    margin: 20px 0px;
+    border:none;
+    outline:none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor:pointer;
+    padding: 7px 25px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:22px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#uploadbt {
+    float: right;
+    border:none;
+    outline:none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor:pointer;
+    width: 50px;
+    height:30px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:12px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#salvebt {
+    border:none;
+    outline:none;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor:pointer;
+    width: 70px;
+    height:35px;
+    text-shadow: 0px 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:14px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#salvebt:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#salveed {
+    border:none;
+    outline:none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor:pointer;
+    width: 70px;
+    height:25px;
+    text-shadow: 0px 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:14px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#salveed:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#alterarbt {
+    border:none;
+    outline:none;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor:pointer;
+    width: 70px;
+    height:35px;
+    text-shadow: 0px 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:14px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#alterarbt:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#upfile1 {
+    border:none;
+    outline:none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor:pointer;
+    width: 130px;
+    height:25px;
+    text-shadow: 0px 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:14px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#upfile1:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#pertuto form button:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+.sombra {
+    background: rgba(0,0,0, 0.2);
+}
+#alterar {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+#fr_erro2 {
+    clear:both;
+    margin:5px 0px;
+    color: #be696e;
+    background-color:#FFEDEF;
+    border:1px solid #fff;
+    padding:10px;
+    width: 480px;
+    text-align: left;
+    margin-left:10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    overflow:auto;  
+}
+#photodived {
+    text-align: center;
+    margin-top: 40px;
+}
+#photo {
+    border: 1px solid #999;
+}
+.fr_edit {
+    color:#666;
+    font-size:24px;
+    font-weight:bold;
+    padding:5px 0px 5px 10px;
+    margin:10px 0px;
+}
+#file1c {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    }​
+    #peremail {
+        text-align: center;
+        border: 1px solid #000;
+    }
+    #peremail form legend {
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: normal;
+        width: auto;
+    }
+    /* LISTA -> INICIO */
+    #listacorpo {
+        width: 510px;
+    }
+
+    #listacorpo ul label {
+        font: 18px "verdana", "New York", serif; 
+        color: #be696e;
+        width: 400px;
+    }
+    #listacorpo ul li {
+        width: 360px;
+        margin-left: 120px;
+    }
+    #img1 {
+        float: left;
+        margin-right: 10px; 
+        border: 1px solid #555;
+    }
+
+    h15#coment1 {
+        width: 220px;
+        font: 12px "verdana", "New York", serif;    
+
+    }
+    h16#endereco {
+        width:450px;
+        font: 10px "verdana", "New York", serif;
+        color:#777;
+    }
+    h17#tel {
+        width:450px;    
+        font: 10px "verdana", "New York", serif;
+        font-weight: bolder; 
+        color:#555;
+    }
+    h18#email {
+        width:450px;
+        color: #be696e;
+    }
+    h19#site {
+        width:450px;
+    }
+    #hr {
+        width:590px;
+        height: 10px;
+        border-top: 1px solid #d9d9d9;
+        background: -moz-linear-gradient(top, rgba(240,240,240,0.1) 0%, rgba(249,249,249,3) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,240,240,0.3)), color-stop(100%,rgba(249,249,249,3))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(240,240,240,0.1) 0%,rgba(249,249,249,3) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(240,240,240,0.1) 0%,rgba(249,249,249,3) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(240,240,240,0.1) 0%,rgba(249,249,249,3) 100%); /* IE10+ */
+        background: linear-gradient(top, rgba(240,240,240,0.1) 0%,rgba(249,249,249,3) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#00f9f9f9',GradientType=0 ); /* IE6-9 */
+    }
+    hr.style-two {
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(180,180,180,0), rgba(180,180,180,0.75), rgba(180,180,180,0)); /* Chrome10+,Safari5.1+ */
+        background-image:    -moz-linear-gradient(left, rgba(180,180,180,0), rgba(180,180,180,0.75), rgba(180,180,180,0)); /* FF3.6+ */
+        background-image:     -ms-linear-gradient(left, rgba(180,180,180,0), rgba(180,180,180,0.75), rgba(180,180,180,0)); /* IE10+ */
+        background-image:      -o-linear-gradient(left, rgba(180,180,180,0), rgba(180,180,180,0.75), rgba(180,180,180,0)); /* Opera 11.10+ */
+    }
+    #editar {
+        clear: both;
+    }
+    #editar ul {
+        text-align: right;
+    }
+    #editar ul input[name=edit] {
+        background:url("../imagens/edit.png") no-repeat left;
+        font: 12px "verdana", "New York", serif;
+        background-size:32px;
+        cursor:pointer;
+        width: 70px;
+        height: 32px;
+        text-align: right;
+        border: none;
+    }
+    #editar ul input[name=delet] {
+        background:url("../imagens/delete.png") no-repeat left;
+        font: 12px "verdana", "New York", serif;
+        background-size:32px;
+        cursor:pointer;
+        width: 80px;
+        height: 32px;
+        text-align: right;
+        border: none;
+    }
+    #editar ul input[name=novo] {
+        background:url("../imagens/novo.png") no-repeat left;
+        font: 12px "verdana", "New York", serif;
+        background-size:32px;
+        cursor:pointer;
+        width: 90px;
+        height: 32px;
+        text-align: right;
+        border: none;
+    }
+    #editar ul input:hover {
+        color:#be696e;
+        text-shadow:1px 1px 1px #ddd;
+    }
+    /* PAGINA -> INICIO */
+    #pages {
+        padding: 30px;
+        margin-left: 50px;
+    }
+    #pages ul {
+        list-style-type: none;
+    }
+    #pages li {
+        float: left;
+        display: inline;
+        margin: 0 5px 0 0;
+        display: block;
+    }
+    #pages li a {
+        color: #be696e;
+        padding: 4px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        text-decoration: none;
+        float: left;
+    }
+    #pages li a:hover {
+        color: #be696e;
+        background: #fae7e8;
+        border: 1px solid #be696e;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    #pages li.nolink {
+        color: #CCC;
+        border: 1px solid #F3F3F3;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 4px;
+    }
+    #pages li.current {
+        color: #FFF;
+        border: 1px solid #be696e;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 4px;
+        background: #be696e;
+    }
+    /* PAGINA -> FINAL */
+
+    .ibutton-container {
+      position: relative;
+      height: 27px;
+      cursor: pointer;
+      overflow: hidden;
+      /* set max width to that of sprite */
+      max-width: 400px;
+      /* prevent text selection */
+      -khtml-user-select: none;
+      -o-user-select: none;
+      -moz-user-select: none;
+      -moz-user-focus: ignore; 
+      -moz-user-input: disabled;
+      /* set default width based on ON/OFF labels */
+      width: 89px;
+  }
+
+  .ibutton-container input {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      /* hide the element */
+      filter:alpha(opacity=0);
+      -moz-opacity: 0.0; 
+      opacity: 0.0;
+
+      /* allow checking of input if visible */
+      -moz-user-input: enabled  !important;
+  }
+
+  .ibutton-handle {
+      display: block;
+      height: 27px;
+      cursor: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 0 -54px;
+      z-index: 3;
+      padding-left: 3px;
+      /* set default width based on ON/OFF labels */
+      width: 33px;
+  }
+
+  .ibutton-handle-right {
+      height: 100%;
+      width: 100%;
+      padding-right: 3px;
+      background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 100% -54px;
+      z-index: 3; 
+  }
+
+  .ibutton-handle-middle {
+      height: 100%;
+      width: 100%;
+      background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 50% -54px;
+      z-index: 3; 
+  }
+
+  div.ibutton-label-on, div.ibutton-label-off {
+      white-space: nowrap;
+      font-size: 17px;
+      line-height: 17px;
+      font-weight: bold;
+      font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      cursor: inherit;
+      display: block;
+      height: 22px;
+      position: absolute;
+      width: auto;
+      top: 0;
+      padding-top: 5px;
+      overflow: hidden; 
+      background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 0 0;
+  }
+
+  div.ibutton-label-on {
+      color: #fff;
+      text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.4);
+      left: 0;
+      padding-top: 5px;
+      z-index: 1; 
+  }
+
+  div.ibutton-label-on span {
+      padding-left: 5px;
+  }
+
+  div.ibutton-label-off {
+      color: #7c7c7c;
+      background-position: 100% 0;
+      text-shadow: 0 -1px 2px rgba(153, 153, 153, 0.4);
+      text-align: right;
+      right: 0;
+    /* the off label needs to near the left edge (ideally just 5px away) 
+     * it just needs to be close enough that it won't show under the handle if dragged to the left  
+     */
+     width: 95%;
+ }
+
+ div.ibutton-label-off span {
+  padding-right: 5px; 
+}
+
+/* create an outline when button gets focus via keyboard */
+.ibutton-container label {
+    cursor: inherit;
+    padding: 1px 5px;
+    font-size: 1em !important;
+}
+
+.ibutton-focus label {
+    /* we must use border, since outline doesn't work in IE */
+    border: 1px dotted #666 !important;
+    padding: 0 2px;
+}
+
+.ibutton-focus div.ibutton-label-on span label {
+    /* use white for more contrast */
+    border-color: #fff !important;
+}
+
+/* add padding to right/left so that text gets clipped before absolute edge */
+.ibutton-padding-left, .ibutton-padding-right {
+    position: absolute; 
+    top: 4px;
+    z-index: 2; 
+    background: transparent url(../imagens/ibutton-slider-default.png) no-repeat scroll 0 -4px; 
+    width: 3px;
+    height: 20px;
+}
+
+.ibutton-padding-left {
+    left: 0; 
+}
+
+.ibutton-padding-right {
+    right: 0; 
+    background-position: 100% -4px;
+}
+
+/* change the styles of the handle when being dragged */
+.ibutton-active-handle .ibutton-handle {
+    background-position: 0 -108px;
+}
+
+.ibutton-active-handle .ibutton-handle-right {
+    background-position: 100% -108px;
+}
+
+.ibutton-active-handle .ibutton-handle-middle {
+    background-position: 50% -108px;
+}
+
+/* styles to use when the button is disabled */
+.ibutton-disabled {
+    cursor: not-allowed !important; /* cursor options: default or not-allowed */
+}
+
+.ibutton-disabled .ibutton-handle {
+    background-position: 0 -81px;
+}
+
+.ibutton-disabled .ibutton-handle-right {
+    background-position: 100% -81px;
+}
+
+.ibutton-disabled .ibutton-handle-middle {
+    background-position: 50% -81px;
+}
+
+.ibutton-disabled div.ibutton-label-on {
+    background-position: 0 -27px;
+}
+
+.ibutton-disabled div.ibutton-label-off {
+    background-position: 100% -27px;
+}
+
+.ibutton-disabled .ibutton-padding-left {
+    background-position: 0 -27px;
+}
+
+.ibutton-disabled .ibutton-padding-right {
+    background-position: 100% -27px;
+}
+
+.ibutton-disabled div.ibutton-label-on {
+    color: #fff;
+}
+
+.ibutton-disabled div.ibutton-label-off {
+    color: #cbcbcb;
+}
+
+h4, h5 {
+    margin-bottom: 0;
+}
+
+.examples pre {
+    margin-top: 0;
+}
+
+label.label {
+    display: block;
+    width: 120px;
+    float: left;
+    padding-top: 5px;
+    height: 30px;
+}
+
+div.row {
+    margin: 10px 0px 0px 20px;
+}
+
+div.row p {
+    clear: both;
+    font-size:11px;
+    font-style: italic;
+    margin-left: 20px;
+    font-weight: none;
+    text-align: left;
+    
+}
+
+input.button {
+    margin-top: 5px;
+}
+
+/* shows overwriting styles via CSS */
+#css .ibutton-container {
+    width: 175px;
+}
+
+#css .ibutton-container .ibutton-handle {
+    width: 5px;
+}
